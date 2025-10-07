@@ -19,10 +19,10 @@ The application is built with [jeka](https://jeka.dev) so executable or installa
 
 Install jeka if you don't have it: https://jeka-dev.github.io/jeka/installation/
 
-Then execute, ```jeka app: install repo=jfx-dev-tools@djeang```.
+Then execute, ```jeka app: install repo=devtools@djeang```.
 
 The application will be built and installed in your PATH.
-To launch the application, execute ```jfx-dev-tools``` command-line from anywhere.
+To launch the application, execute ```devtools``` command-line from anywhere.
 
 
 ## Getting Started
