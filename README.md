@@ -15,32 +15,18 @@ A collection of developer utilities in a single desktop application.
 
 ## Installation
 
-`dev-tools` is a [JavaFX](https://openjfx.io/) desktop application built with Maven.
-Obtain a binary using one of the following methods:
+The application is built with [jeka](https://jeka.dev) so executable or installable from anywhere.
 
-* Build an executable jar from the source.
+Install jeka if you don't have it: https://jeka-dev.github.io/jeka/installation/
 
-```
-./mvnw clean package
-```
+Then execute, ```jeka app: install repo=jfx-dev-tools@djeang```.
 
-* Build a native application using [GluonFX Maven plugin](https://github.com/gluonhq/gluonfx-maven-plugin).
-  [GraalVM](https://www.graalvm.org/) installation is required. After obtaining the GraalVM distribution, the
-  environment variable `GRAALVM_HOME` should be set to point to it.
+The application will be built and installed in your PATH.
+To launch the application, execute ```jfx-dev-tools``` command-line from anywhere.
 
-```
-./mvnw clean gluonfx:build
-```
-
-* Download a build from [releases](https://github.com/reugn/dev-tools/releases).
-
-## Prerequisites
-
-* Java 11 or later
 
 ## Getting Started
 
-* Launch the application. For the executable jar use `java -jar target/dev-tools-<version>.jar`.
 * Explore the main menu and its options.
 * Select a tool from the `Tools` dropdown menu. See below for a complete list with screenshots.
 * Switch between light and dark themes using the `View -> Theme` menu option.

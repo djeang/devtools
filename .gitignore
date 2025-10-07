@@ -7,3 +7,6 @@
 /target/
 /out/
 .idea_modules/
+
+/jeka-output
+/.jeka-work
