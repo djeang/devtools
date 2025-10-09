@@ -24,6 +24,8 @@ Then execute, ```jeka app: install repo=devtools@djeang```.
 The application will be built and installed in your PATH.
 To launch the application, execute ```devtools``` command-line from anywhere.
 
+It is possible to execute the app without installing it: ```jeka -p repo=devtools@djeang```.
+
 You can visit my jeka catalog for other tools: ```jeka app: catalog name=djeang```
 
 
