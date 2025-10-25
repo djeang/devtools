@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><project version="4">
+    <component name="ProjectModuleManager">
+        <modules>
+            <module filepath="$PROJECT_DIR$/.idea/jfx-dev-tools.iml" fileurl="file://$PROJECT_DIR$/.idea/jfx-dev-tools.iml"/>
+        </modules>
+    </component>
+</project>

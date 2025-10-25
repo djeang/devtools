@@ -1,12 +1,3 @@
-*.class
-*.jar
-*.iml
-*.log
-
-.idea/
-/target/
-/out/
-.idea_modules/
-
 /jeka-output
 /.jeka-work
+/.idea/gbrowser_project.xml
