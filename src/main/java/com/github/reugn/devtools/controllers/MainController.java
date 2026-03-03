@@ -22,6 +22,7 @@ import javafx.scene.layout.VBox;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.net.URI;
 import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
@@ -135,7 +136,7 @@ public class MainController extends ResourceLoader implements Initializable {
             String classPath = requireNonNull(clazz.getResource(clazz.getSimpleName() + ".class")).toString();
             String manifestPath = classPath.substring(0, classPath.lastIndexOf("!") + 1) +
                     "/META-INF/MANIFEST.MF";
-            Manifest manifest = new Manifest(new URL(manifestPath).openStream());
+            Manifest manifest = new Manifest(URI.create(manifestPath).toURL().openStream());
             version = manifest.getMainAttributes().getValue("Implementation-Version");
         } catch (Exception e) {
             return "NA";
