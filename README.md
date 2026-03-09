@@ -19,10 +19,12 @@ The application is built with [jeka](https://jeka.dev) so executable or installa
 
 Install jeka if you don't have it: https://jeka-dev.github.io/jeka/installation/
 
-Then execute, ```jeka app: install repo=devtools@djeang```.
+Then execute, 
+```shell
+jeka app: install repo=devtools@djeang runtime=BUNDLE
+```
 
-The application will be built and installed in your PATH.
-To launch the application, execute ```devtools``` command-line from anywhere.
+The application will be built and packaged in a local folder.
 
 It is possible to execute the app without installing it: ```jeka -r https://github.com/djeang/devtools```.
 
