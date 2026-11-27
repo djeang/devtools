@@ -15,21 +15,42 @@ A collection of developer utilities in a single desktop application.
 
 ## Installation
 
-The application is built with [jeka](https://jeka.dev) so executable or installable from anywhere.
+The application is built with [JeKa](https://jeka-dev.github.io/jeka/), so you can run or install it from its Git
+repository, without cloning it yourself. It shows how JeKa builds a JavaFX application (with the `javafx` plugin),
+and packages it as a desktop application with *jpackage* (`bundle` KBean).
 
-Install jeka if you don't have it: https://jeka-dev.github.io/jeka/installation/
+[Install JeKa](https://jeka-dev.github.io/jeka/installation/) if you don't have it. JeKa downloads the JDK and JavaFX it needs.
 
-Then execute, 
+Install the desktop application:
 ```shell
 jeka app: install repo=devtools@djeang runtime=BUNDLE
 ```
 
-The application will be built and packaged in a local folder.
+`devtools@djeang` refers to this repository in the *djeang* catalog. JeKa builds the application, packages it,
+and opens the folder holding the package. On the first run, JeKa asks you to confirm that you trust this repository.
 
-It is possible to execute the app without installing it: ```jeka -r https://github.com/djeang/devtools```.
+Run the application without installing it:
+```shell
+jeka -r https://github.com/djeang/devtools -p
+```
 
-You can visit my jeka catalog for other tools: ```jeka app: catalog name=djeang```
+See the other tools of the catalog:
+```shell
+jeka app: catalog name=djeang
+```
 
+From a clone of this repository, run it with `jeka -p`, or create the package in `jeka-output/` with `jeka bundle: pack`.
+`-p` reuses the jar already in `jeka-output/`: after `jeka bundle: pack`, run `jeka -c -p` to rebuild it as a runnable jar.
+
+### How it works
+
+- [jeka.properties](jeka.properties): JeKa and Java versions, the `javafx` plugin (JavaFX follows the Java version),
+  the main class, and the *jpackage* options: modules of the bundled runtime, and icons per platform.
+- [jeka.project.deps](jeka.project.deps): the dependencies. JavaFX is `compile-only`, as the plugin adds it to the module path.
+
+Learn more: [app KBean](https://jeka-dev.github.io/jeka/reference/kbeans-app/),
+[bundle KBean](https://jeka-dev.github.io/jeka/reference/kbeans-bundle/),
+[source-runnable applications](https://jeka-dev.github.io/jeka/tutorials/source-runnable-apps/).
 
 ## Getting Started
 

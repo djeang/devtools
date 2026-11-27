@@ -1,18 +1,18 @@
 [version]
-com.fasterxml.jackson.core:*:2.18.1
-org.apache.logging.log4j:*:2.24.1
+com.fasterxml.jackson:jackson-bom:2.23.0@pom
+org.apache.logging.log4j:*:2.26.1
 
 [compile]
 com.fasterxml.jackson.core:jackson-core
 com.fasterxml.jackson.core:jackson-databind
-com.google.guava:guava:33.3.1-jre
-com.google.inject:guice:5.1.0
-org.apache.commons:commons-lang3:3.17.0
+com.google.guava:guava:33.8.0-jre
+com.google.inject:guice:7.0.0
+org.apache.commons:commons-lang3:3.22.0
 org.apache.logging.log4j:log4j-core
 org.apache.logging.log4j:log4j-api
-org.fxmisc.richtext:richtextfx:0.11.3
-org.controlsfx:controlsfx:11.2.1
-com.auth0:java-jwt:4.4.0
+org.fxmisc.richtext:richtextfx:0.11.7
+org.controlsfx:controlsfx:11.2.7
+com.auth0:java-jwt:4.6.2
 
 [compile-only]
 org.openjfx:javafx-controls
